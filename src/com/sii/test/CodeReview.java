@@ -1,6 +1,6 @@
 package com.sii.test;
 
-public class Main {
+public class CodeReview {
 
     public static void main(String[] args) {
 
