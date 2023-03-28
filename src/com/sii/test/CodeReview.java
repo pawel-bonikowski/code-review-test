@@ -1,5 +1,7 @@
 package com.sii.test;
 
+import java.util.Arrays;
+
 public class CodeReview {
 
     public static void main(String[] args) {
@@ -14,10 +16,13 @@ public class CodeReview {
         r.a = 9;
         r.b = 10;
 
-        System.out.println(c.calculateArea());
-        System.out.println(s.getArea());
-        System.out.println(r.getArea());
-
+        Arrays.asList(c, s, r).forEach(i -> {
+            double area = 0d;
+            if (i instanceof Circle) area = ((Circle) i).calculateArea();
+            if (i instanceof Square) area = ((Square) i).getArea();
+            if (i instanceof Rectangle) area = ((Rectangle) i).getArea();
+            System.out.println("Area: " + area);
+        });
     }
 }
 

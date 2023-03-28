@@ -17,7 +17,6 @@ public class Collection {
         System.out.println("Set size = " + set.size());
     }
 }
-
 class Test {
 
     public String name;
