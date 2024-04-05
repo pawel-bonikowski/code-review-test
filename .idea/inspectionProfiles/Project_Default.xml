@@ -22,6 +22,7 @@
         </set>
       </option>
     </inspection_tool>
+    <inspection_tool class="SpringTransactionalMethodCallsInspection" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="TrailingComma" enabled="true" level="ERROR" enabled_by_default="true" editorAttributes="ERRORS_ATTRIBUTES">
       <option name="addCommaWarning" value="true" />
     </inspection_tool>
