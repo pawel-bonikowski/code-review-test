@@ -10,7 +10,7 @@ public class Generic {
         OtherUser otherUser = new OtherUser("otherName", "surName");
         User copy = copy(some);
         OtherUser copy2 = copy(otherUser);
-        System.out.println("Other propery of user is: " + copy.getSomeOtherProperty());
+        System.out.println("Other property of user is: " + copy.getSomeOtherProperty());
         System.out.println("Other user SurName is: " + copy2.getSurName());
     }
 
