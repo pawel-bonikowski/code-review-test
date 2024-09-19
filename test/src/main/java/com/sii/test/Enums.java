@@ -6,9 +6,7 @@ import org.jetbrains.annotations.NotNull;
  * Refactor the code.  Please use enum that will support Strategy Pattern
  */
 public class Enums {
-   
 
-   
    public static void main(String @NotNull [] args) {
       if(args.length != 3) System.out.println("Please provide an operator(+,-,*,/,^"); 
       String operation = args[1];
