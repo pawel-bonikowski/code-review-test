@@ -4,8 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 public class Main {
 
-    private final static String API_URL = "https://danepubliczne.imgw.pl/api/data/synop/station/jeleniagora";
-
     public static void main(String[] args) throws JsonProcessingException {
 
         WeatherInfoService weatherInfoService = new WeatherInfoService();

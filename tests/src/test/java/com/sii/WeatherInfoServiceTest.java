@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /*
-  Review the test and apply fixes if needed
+  Review the test and apply required changes if needed
  */
 class WeatherInfoServiceTest {
 
