@@ -29,7 +29,7 @@ public class Student {
     public Student() {
     }
 
-    @OneToMany
+    @OneToMany()
     private List<Subject> subjects = new ArrayList<>();
 
     public void setId(Long id) {
@@ -56,11 +56,11 @@ public class Student {
         this.surname = surname;
     }
 
-    public List<Subject> getLectures() {
+    public List<Subject> getSubjects() {
         return subjects;
     }
 
-    public void setLectures(List<Subject> subjects) {
+    public void setSubjects(List<Subject> subjects) {
         this.subjects = subjects;
     }
 }

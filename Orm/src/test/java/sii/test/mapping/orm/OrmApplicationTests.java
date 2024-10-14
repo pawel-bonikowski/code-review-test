@@ -31,6 +31,7 @@ class OrmApplicationTests {
         rootEntityRepository.deleteAll();
         rootEntityRepository.saveAllAndFlush(createTestEntity());
 
+
         //when
         List<Student> all = rootEntityRepository.findAll()
                 .stream()
@@ -40,8 +41,8 @@ class OrmApplicationTests {
 
         //then
         Assertions.assertEquals(2, all.size());
-        Assertions.assertEquals(3, all.get(0).getLectures().size());
-        Assertions.assertEquals(4, all.get(1).getLectures().size());
+        Assertions.assertEquals(3, all.get(0).getSubjects().size());
+        Assertions.assertEquals(4, all.get(1).getSubjects().size());
     }
 
 
@@ -73,14 +74,14 @@ class OrmApplicationTests {
     private List<Student> createTestEntity() {
 
         Student student1 = new Student("Jan", "Kowalski");
-        student1.setLectures(List.of(
+        student1.setSubjects(List.of(
                 new Subject("Match", student1, BigDecimal.valueOf(42.7)),
                 new Subject("History", student1, BigDecimal.valueOf(44.6)),
                 new Subject("Geography", student1, BigDecimal.valueOf(77.1))
         ));
 
         Student student2 = new Student("Adam", "Nowak");
-        student2.setLectures(List.of(
+        student2.setSubjects(List.of(
                 new Subject("Match", student2, BigDecimal.valueOf(11.7)),
                 new Subject("History", student2, BigDecimal.valueOf(78.6)),
                 new Subject("Geography", student2, BigDecimal.valueOf(33.2)),
